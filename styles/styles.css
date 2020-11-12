@@ -1,0 +1,49 @@
+/*************** 
+ * BASE STYLES *
+ ***************/
+
+/* Variables */
+:root {
+  --black: #1b1d29;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/**********
+ * HEADER *
+ **********/
+header {
+  background: var(--black);
+  padding: 1rem 2rem;
+}
+
+.logo {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* US ELECTIONS */
+.logo h1 {
+  font-size: 3rem;
+}
+
+/* Star */
+.logo img {
+  margin-right: 1rem;
+  width: 4rem;
+}

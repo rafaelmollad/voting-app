@@ -1,0 +1,6 @@
+/* These styles will be applied on devices that have a width of at least 768px */
+@media screen and (min-width: 768px) {
+  .logo {
+    justify-content: flex-start;
+  }
+}
