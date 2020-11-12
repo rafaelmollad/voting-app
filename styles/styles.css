@@ -6,12 +6,19 @@
 :root {
   --black: #1b1d29;
   --white: #ffffff;
+  --bg-overlay: #fdffce;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body,
+html,
+#app {
+  height: 100%;
 }
 
 html {
@@ -46,4 +53,25 @@ header {
 .logo img {
   margin-right: 1rem;
   width: 4rem;
+}
+
+/********
+ * MAIN *
+ ********/
+
+main {
+  background: url(../images/american-flag.jpeg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: var(--bg-overlay);
+  opacity: 0.96;
 }
