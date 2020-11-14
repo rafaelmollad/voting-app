@@ -4,7 +4,7 @@
     justify-content: flex-start;
   }
 
-  main {
+  .cards {
     flex-direction: row;
     justify-content: space-around;
     height: 100%;
@@ -26,7 +26,8 @@
     height: 26rem;
   }
 
-  .votes-number {
+  .votes-number-trump,
+  .votes-number-biden {
     font-size: 3.5rem;
   }
 
@@ -51,7 +52,7 @@
 
 /* These styles will be applied on devices that have a width of at least 1024px */
 @media screen and (min-width: 1024px) {
-  main {
+  .cards {
     width: 70%;
   }
 
@@ -59,23 +60,23 @@
     transform: translateY(-2rem);
   }
 
-  .card:hover .btn-republican,
-  .card:hover .btn-democrat {
+  .card:hover .btn-trump,
+  .card:hover .btn-biden {
     font-size: 2.5rem;
   }
 
-  .btn-republican:hover {
+  .btn-trump:hover {
     background: var(--btn-red-hover);
   }
 
-  .btn-democrat:hover {
+  .btn-biden:hover {
     background: var(--btn-light-blue-hover);
   }
 }
 
 /* These styles will be applied on devices that have a width of at least 1400px */
 @media screen and (min-width: 1400px) {
-  main {
+  .cards {
     width: 60%;
   }
 }
